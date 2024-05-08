@@ -15,5 +15,12 @@ pipeline {
                 sh 'echo "MAKE SOME NOISE"'
             }
         }
+
+        stage('Cleanup') {
+            steps {
+                sh 'echo "Performing cleanup..."'
+                // Add cleanup commands or scripts here
+            }
+        }
     }
 }
