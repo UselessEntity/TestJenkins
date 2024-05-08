@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage {
+        stage('Deploy') {
             steps {
                 sh 'echo "You can run now"'
             }
