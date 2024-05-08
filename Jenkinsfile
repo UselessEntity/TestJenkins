@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'echo "SAY HELLO TO MY LITTLE FRIEND"'
-                sh 'echo "MAKE SOME NOISE"'
+                sh 'echo "MAKE SOME NOISE FOR ME"'
             }
         }
 
