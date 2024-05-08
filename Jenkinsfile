@@ -24,7 +24,7 @@ pipeline {
 
         stage('Cleanup') {
             steps {
-                sh 'echo "Do some push-up, biatch, or else..."'
+                sh 'echo "Do some clean-up, biatch, or else..."'
                 // Add cleanup commands or scripts here
             }
         }
