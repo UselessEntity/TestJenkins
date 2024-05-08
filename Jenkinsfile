@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'java --version'
-                sh 'pwd'
+                sh 'dotnet build My.NetPJ.sln'
             }
         }
         
@@ -13,6 +12,12 @@ pipeline {
             steps {
                 sh 'echo "SAY HELLO TO MY LITTLE FRIEND"'
                 sh 'echo "MAKE SOME NOISE"'
+            }
+        }
+
+        stage {
+            steps {
+                sh 'echo "You can run now"'
             }
         }
 
