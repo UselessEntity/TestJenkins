@@ -1,14 +1,11 @@
 pipeline {
-    agent {
-        docker {
-            image 'mcr.microsoft.com/dotnet/sdk:8.0'
-        }
-    }
+    agent any
 
     stages {
         stage('Build') {
             steps {
-                sh 'dotnet build My.NetPJ.sln'
+                sh 'java --version'
+                sh 'pwd'
             }
         }
         
