@@ -1,0 +1,14 @@
+pipeline {
+    agent {
+        label 'slave'
+    }
+    stages {
+        stage('SAY HELLO TO MY LITTLE FRIEND') {
+            steps {
+                sh 'java --version'
+                echo "DIE PLS"
+                sh 'pwd'
+            }
+        }
+    }
+}
